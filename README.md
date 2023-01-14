@@ -1,4 +1,3 @@
-  
 # Project display
 
   
@@ -29,9 +28,9 @@ student_list has two modules:
 
 Our work is to build one container for each module an make them interact with each other
 Now it is time to explain you each file's role:
- docker-compose.yml: to launch the application (API and web app)
  
 
+ - docker-compose.yml: to launch the application (API and web app)
  - Dockerfile: the file that will be used to build the API image (details will be given)
  -  student_age.json: contain student name with age on JSON format
  - student_age.py: contains the source code of the API in python
