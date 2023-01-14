@@ -8,6 +8,8 @@ services:
       - "8080:80"
     volumes:
       - ./website:/var/www/html
+    networks:
+      - student_network
     environment:
       - USERNAME=toto
       - PASSWORD=python
@@ -17,3 +19,7 @@ services:
       - "8000:5000"
     volumes:
       - ./simple_api/student_age.json:/data/student_age.json
+    networks:
+      - student_network
+networks:
+  student_network:
