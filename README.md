@@ -38,6 +38,7 @@ Now it is time to explain you each file's role:
  - index.php: PHP page where end-user will be connected to interact with the service to - list students with age. 
  - We need to update the following line before running the website container to make  _**api_ip_or_name**_  and  _**port**_  fit our deployment  
  url = 'http://<api_ip_or_name:port>/pozos/api/v1.0/get_student_ages'.
+   ## Build and test our API Image
    Using the Dockerfile, we create the API image and its IHM in the form of a docker container. The latter listens on ports 8000 and 5000 respectively 
   `vi Dockerfile`
  We copy the contents of the provided file into this file.
